@@ -1,0 +1,3 @@
+module Dojo {
+	requires lombok;
+}
