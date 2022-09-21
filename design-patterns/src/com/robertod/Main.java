@@ -2,6 +2,7 @@ package com.robertod;
 
 import com.robertod.architectural.observer.ObserverPatternMain;
 import com.robertod.behavioural.strategy.StrategyPatternMain;
+import com.robertod.creational.factory.simplefactory.SimpleFactoryPatternMain;
 import com.robertod.structural.decorator.DecoratorPatternMain;
 
 public class Main {
@@ -17,6 +18,9 @@ public class Main {
 		
 		DecoratorPatternMain decoratorPatternMain = new DecoratorPatternMain();
 		decoratorPatternMain.start();
+		
+		SimpleFactoryPatternMain simpleFactoryPatternMain = new SimpleFactoryPatternMain();
+		simpleFactoryPatternMain.start();
 	}
 	
 	public static void print(String s) {
