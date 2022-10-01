@@ -1,13 +1,13 @@
 package com.robertod.structural.decorator;
 
 import com.robertod.BasePatternMain;
-import com.robertod.Main;
+import com.robertod.Utils;
 
 public class DecoratorPatternMain implements BasePatternMain {
 
 	@Override
 	public void start() {
-		Main.print("====== Decorator Pattern ======");
+		Utils.print("====== Decorator Pattern ======");
 		
 		Pizza pizza1;
 		RedPizza redPizza = new RedPizza();
@@ -15,13 +15,13 @@ public class DecoratorPatternMain implements BasePatternMain {
 		SpicyDecorator spicyDecorator = new SpicyDecorator(mushroomsDecorator);
 		pizza1 = spicyDecorator;
 		
-		Main.print(pizza1.getName() + ": " +  pizza1.getPrice());
+		Utils.print(pizza1.getName() + ": " +  pizza1.getPrice());
 		
 		Pizza pizza2;
 		CheeseDecorator cheeseDecorator = new CheeseDecorator(new WhitePizza());
 		pizza2 = cheeseDecorator;
 		
-		Main.print(pizza2.getName() + ": " + pizza2.getPrice());
+		Utils.print(pizza2.getName() + ": " + pizza2.getPrice());
 		
 	}
 

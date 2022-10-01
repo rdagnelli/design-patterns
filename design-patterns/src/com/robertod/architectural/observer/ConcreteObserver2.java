@@ -1,6 +1,6 @@
 package com.robertod.architectural.observer;
 
-import com.robertod.Main;
+import com.robertod.Utils;
 
 public class ConcreteObserver2 implements IObserver, IDisplay {
 	
@@ -16,7 +16,7 @@ public class ConcreteObserver2 implements IObserver, IDisplay {
 	@Override
 	public void update() {
 		sampleData = concreteSubject.getSampleData();
-		Main.print("ConcreteObserver2 updated.");
+		Utils.print("ConcreteObserver2 updated.");
 		display();
 	}
 	
@@ -30,7 +30,7 @@ public class ConcreteObserver2 implements IObserver, IDisplay {
 
 	@Override
 	public void display() {
-		Main.print("ConcreteObserver2 sampleData = " + sampleData);		
+		Utils.print("ConcreteObserver2 sampleData = " + sampleData);		
 	}
 	
 }

@@ -1,6 +1,6 @@
 package com.robertod.creational.factory.simplefactory;
 
-import com.robertod.Main;
+import com.robertod.Utils;
 
 import lombok.Data;
 
@@ -13,7 +13,7 @@ public class FilePersistenceContext extends PersistenceContext {
 
 	@Override
 	public void persist(String data) {
-		Main.print("Data \"" + data + "\" persisted on file.");
+		Utils.print("Data \"" + data + "\" persisted on file.");
 	}
 	
 }

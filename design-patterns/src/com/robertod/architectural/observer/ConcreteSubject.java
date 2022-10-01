@@ -3,7 +3,7 @@ package com.robertod.architectural.observer;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.robertod.Main;
+import com.robertod.Utils;
 
 public class ConcreteSubject implements ISubject {
 
@@ -18,13 +18,13 @@ public class ConcreteSubject implements ISubject {
 	
 	@Override
 	public void registerObserver(IObserver observer) {
-		Main.print("Registering new observer");
+		Utils.print("Registering new observer");
 		observerList.add(observer);
 	}
 
 	@Override
 	public void removeObserver(IObserver observer) {
-		Main.print("Removing observer");
+		Utils.print("Removing observer");
 		observerList.remove(observer);
 	}
 

@@ -1,13 +1,13 @@
 package com.robertod.creational.factory.factorymethod;
 
 import com.robertod.BasePatternMain;
-import com.robertod.Main;
+import com.robertod.Utils;
 
 public class FactoryMethodPatternMain implements BasePatternMain {
 
 	@Override
 	public void start() {
-		Main.print("====== Factory Method Pattern ======");
+		Utils.print("====== Factory Method Pattern ======");
 		try {
 			IPersistenceContext persistence;
 

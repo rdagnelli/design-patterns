@@ -1,6 +1,6 @@
 package com.robertod.creational.factory.factorymethod;
 
-import com.robertod.Main;
+import com.robertod.Utils;
 
 import lombok.Data;
 
@@ -14,7 +14,7 @@ public class FilePersistenceContext implements IPersistenceContext {
 	}
 
 	public void persist(String data) {
-		Main.print("Data \"" + data + "\" persisted on file.");
+		Utils.print("Data \"" + data + "\" persisted on file.");
 	}
 	
 }

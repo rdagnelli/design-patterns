@@ -1,13 +1,13 @@
 package com.robertod.architectural.observer;
 
 import com.robertod.BasePatternMain;
-import com.robertod.Main;
+import com.robertod.Utils;
 
 public class ObserverPatternMain implements BasePatternMain {
 
 	@Override
 	public void start() {
-		Main.print("====== Observer Pattern ======");
+		Utils.print("====== Observer Pattern ======");
 		
 		ConcreteSubject subject = new ConcreteSubject();
 		ConcreteObserver1 observer1 = new ConcreteObserver1(subject);
