@@ -7,7 +7,7 @@ public class StrategyPatternMain implements BasePatternMain{
 
 	@Override
 	public void start() {
-		Utils.print("====== Strategy Pattern ======");
+		Utils.printHeader1("Strategy Pattern");
 		
 		Duck john = new Duck("John the Normal duck", new FlyStrategyImpl());
 		Duck erick = new Duck("Erick the Drunk duck", new FlyDrunkStrategyImpl());

@@ -7,7 +7,7 @@ public class ObserverPatternMain implements BasePatternMain {
 
 	@Override
 	public void start() {
-		Utils.print("====== Observer Pattern ======");
+		Utils.printHeader1("Observer Pattern");
 		
 		ConcreteSubject subject = new ConcreteSubject();
 		ConcreteObserver1 observer1 = new ConcreteObserver1(subject);

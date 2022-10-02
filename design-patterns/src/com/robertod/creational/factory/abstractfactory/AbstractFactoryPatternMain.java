@@ -7,7 +7,7 @@ public class AbstractFactoryPatternMain implements BasePatternMain {
 
 	@Override
 	public void start() {
-		Utils.print("====== Abstract Factory Pattern ======");
+		Utils.printHeader1("Abstract Factory Pattern");
 		try {
 			
 			// Samsung Factory

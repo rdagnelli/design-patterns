@@ -7,7 +7,7 @@ public class DecoratorPatternMain implements BasePatternMain {
 
 	@Override
 	public void start() {
-		Utils.print("====== Decorator Pattern ======");
+		Utils.printHeader1("Decorator Pattern");
 		
 		Pizza pizza1;
 		RedPizza redPizza = new RedPizza();

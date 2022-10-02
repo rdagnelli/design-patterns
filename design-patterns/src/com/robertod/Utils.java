@@ -8,6 +8,8 @@ public class Utils {
 
 	public static final String SPACE_SEPARATOR = " ";
 	
+	public static final String EMPTY = "";
+	
 	public static void print(String s) {
 		System.out.println(s);
 	}
@@ -17,5 +19,15 @@ public class Utils {
 		StringJoiner stringJoiner = new StringJoiner(SPACE_SEPARATOR);
 		stringList.forEach(s -> stringJoiner.add(s));
 		print(stringJoiner.toString());
+	}
+	
+	public static void printHeader1(String s) {
+		print(EMPTY);
+		print("=====", s, "=====");
+	}
+	
+	public static void printHeader2(String s) {
+		print(EMPTY);
+		print("===", s, "===");
 	}
 }

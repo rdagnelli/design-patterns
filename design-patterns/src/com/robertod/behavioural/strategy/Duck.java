@@ -15,7 +15,7 @@ public class Duck {
 	}
 	
 	public void sayHello() {
-		System.out.println("Hello, i'm the duck " + name);
+		System.out.println("Hello, I'm the duck " + name);
 	}
 	
 	public void fly() {

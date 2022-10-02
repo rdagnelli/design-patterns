@@ -7,7 +7,7 @@ public class FactoryMethodPatternMain implements BasePatternMain {
 
 	@Override
 	public void start() {
-		Utils.print("====== Factory Method Pattern ======");
+		Utils.printHeader1("Factory Method Pattern");
 		try {
 			IPersistenceContext persistence;
 
